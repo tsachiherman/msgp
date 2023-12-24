@@ -67,8 +67,8 @@ func format(file string, data []byte, skipFormat bool) error {
 		Sections: gci.SectionList{
 			sections.StandardPackage{},
 			sections.DefaultSection{},
-			sections.Prefix{ImportPrefix: "github.com/algorand"},
-			sections.Prefix{ImportPrefix: "github.com/algorand/go-algorand"},
+			sections.Prefix{ImportPrefix: "github.com/tsachiherman"},
+			sections.Prefix{ImportPrefix: "github.com/tsachiherman/ultraalgo"},
 		},
 		SectionSeparators: gci.SectionList{sections.NewLine{}},
 	}); err != nil {
@@ -123,8 +123,8 @@ func generate(f *parse.FileSet, mode gen.Method) (*bytes.Buffer, *bytes.Buffer, 
 		writeImportHeader(
 			testbuf,
 			"github.com/algorand/msgp/msgp",
-			"github.com/algorand/go-algorand/protocol",
-			"github.com/algorand/go-algorand/test/partitiontest",
+			"github.com/tsachiherman/ultraalgo/protocol",
+			"github.com/tsachiherman/ultraalgo/test/partitiontest",
 			"testing")
 		testwr = testbuf
 	}
