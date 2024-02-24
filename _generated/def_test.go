@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/algorand/msgp/msgp"
+	"github.com/tsachiherman/msgp/msgp"
 )
 
 func TestRuneEncodeDecode(t *testing.T) {
