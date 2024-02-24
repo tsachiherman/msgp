@@ -13,7 +13,7 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/algorand/msgp/gen"
+	"github.com/tsachiherman/msgp/gen"
 )
 
 // When stuff's going wrong, you'll be glad this is here!
@@ -25,7 +25,6 @@ const debugTemp = false
 //
 // structs are currently processed alphabetically by msgp. this test relies on
 // that property.
-//
 func TestIssue185Idents(t *testing.T) {
 	t.SkipNow()
 

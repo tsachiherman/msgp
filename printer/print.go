@@ -7,10 +7,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/algorand/msgp/gen"
-	"github.com/algorand/msgp/parse"
 	"github.com/daixiang0/gci/pkg/gci"
 	"github.com/daixiang0/gci/pkg/gci/sections"
+	"github.com/tsachiherman/msgp/gen"
+	"github.com/tsachiherman/msgp/parse"
 	"github.com/ttacon/chalk"
 	"golang.org/x/tools/imports"
 )

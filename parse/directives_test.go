@@ -3,7 +3,7 @@ package parse
 import (
 	"testing"
 
-	"github.com/algorand/msgp/gen"
+	"github.com/tsachiherman/msgp/gen"
 )
 
 const (

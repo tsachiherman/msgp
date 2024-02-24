@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/algorand/msgp/msgp"
+	"github.com/tsachiherman/msgp/msgp"
 )
 
 func marshal(w io.Writer, topics *Topics) *marshalGen {

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/msgp/msgp"
+	"github.com/tsachiherman/msgp/msgp"
 )
 
 type maxSizeState uint8

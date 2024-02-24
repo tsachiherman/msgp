@@ -6,7 +6,7 @@ import (
 	"go/ast"
 	"strings"
 
-	"github.com/algorand/msgp/gen"
+	"github.com/tsachiherman/msgp/gen"
 )
 
 const linePrefix = "//msgp:"
@@ -35,8 +35,9 @@ const _postunmarshalcheck = "postunmarshalcheck"
 
 var errNotEnoughArguments = errors.New("postunmarshalcheck did not receive enough arguments. expected at least 3")
 
-//msgp:postunmarshalcheck {Type} {funcName} {funcName} ...
 // the functions should have no params, and output zero.
+//
+//msgp:postunmarshalcheck {Type} {funcName} {funcName} ...
 func postunmarshalcheck(text []string, f *FileSet) error {
 	if len(text) < 3 {
 		return errNotEnoughArguments

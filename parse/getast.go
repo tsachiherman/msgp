@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/algorand/msgp/gen"
+	"github.com/tsachiherman/msgp/gen"
 	"github.com/ttacon/chalk"
 	"golang.org/x/tools/go/packages"
 )
